@@ -1,104 +1,150 @@
-/* Body Background */
 body{
-    background-color:#0b0b0b;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#ffffff;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#e7e7e7;
 }
 
-/* Top Section */
+/* NAVBAR */
+
+.navbar{
+    background:black;
+    padding:15px;
+    text-align:center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:gold;
+}
+
+/* TOP SECTION */
+
 .Top{
-    background-color:#000000;
+    background:black;
     text-align:center;
     width:80%;
     margin:auto;
-    border:3px solid #d4af37;
+    border:10px solid white;
     border-radius:80px;
     padding:20px;
-    box-shadow:0px 0px 20px rgba(212,175,55,0.5);
+    animation:fadeIn 2s;
 }
 
-/* Title */
-h1{
-    color:#d4af37;
-    font-size:120px;
+.Top h1{
+    color:gold;
+    font-size:100px;
     letter-spacing:10px;
 }
 
-/* Banner Image */
 .Top img{
     width:60%;
-    height:500px;
-    border:3px solid #d4af37;
-    border-radius:40px;
+    height:450px;
+    border:2px gold solid;
+    border-radius:30px;
 }
 
-/* Section Heading */
+/* SECTION TITLE */
+
 h2{
-    font-size:46px;
     text-align:center;
-    color:#d4af37;
-    margin-top:40px;
+    font-size:40px;
+    margin-top:50px;
 }
 
-/* Watch Layout */
+/* WATCH CONTAINER */
+
 .Main{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
     flex-wrap:wrap;
 }
 
-/* Watch Card */
+/* WATCH CARD */
+
 .Sub{
-    transition:all 0.5s ease;
-    background-color:#111111;
-    width:350px;
+    background:black;
+    width:300px;
     text-align:center;
     border-radius:20px;
-    margin:25px;
-    border:1px solid #d4af37;
+    margin:20px;
+    padding:10px;
+    transition:0.4s;
 }
 
-/* Watch Image */
 .Sub img{
-    width:300px;
+    width:260px;
     height:200px;
-    border:2px solid #d4af37;
-    border-radius:20px;
+    border-radius:15px;
+    border:2px gold solid;
+    transition:0.4s;
 }
 
-/* Button */
+.Sub h3{
+    color:white;
+}
+
+.Sub p{
+    color:gold;
+    font-size:20px;
+}
+
+/* CARD HOVER */
+
+.Sub:hover{
+    transform:translateY(-20px) scale(1.05);
+}
+
+/* IMAGE HOVER */
+
+.Sub img:hover{
+    transform:scale(1.1);
+}
+
+/* BUTTON */
+
 .Sub button{
-    transition:all 0.4s ease;
-    width:300px;
-    height:45px;
-    background-color:#d4af37;
-    color:#000000;
-    font-size:18px;
-    font-weight:bold;
+    width:220px;
+    height:40px;
+    background:gold;
+    color:black;
     border:none;
     border-radius:20px;
+    font-weight:bold;
     cursor:pointer;
+    transition:0.4s;
 }
 
-/* Hover Effects */
-.Main:hover .Sub{
-    transform:scale(0.85);
+.Sub button:hover{
+    background:dodgerblue;
+    color:white;
 }
 
-.Main .Sub:hover{
-    transform:translateY(-25px) scale(1);
-    box-shadow:0px 15px 30px rgba(212,175,55,0.5);
-}
+/* FOOTER */
 
-/* Button Hover */
-.Sub:hover button{
-    background-color:#ffd700;
-}
-
-/* Footer */
-h6{
+footer{
+    background:black;
+    color:white;
     text-align:center;
-    font-size:35px;
-    color:#d4af37;
-    margin-top:60px;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
